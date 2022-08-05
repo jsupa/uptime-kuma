@@ -177,7 +177,7 @@ export default {
          * @returns {string}
          */
         getBeatTitle(beat) {
-            return `${this.$root.datetime(beat.time)}` + ((beat.msg) ? ` - ${beat.msg}` : "");
+            return `${this.$root.datetime(beat.time)} (${beat.ping})` + ((beat.msg) ? ` - ${beat.msg}` : "");
         },
 
     },
